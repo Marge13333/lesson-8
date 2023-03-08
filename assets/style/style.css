@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li,ul{
+    list-style-type: none;
+}
+/*--------fonts-------------*/
+@font-face {
+    font-family: Helvetica Neue Regular;
+    src: url(/assets/fonts/helveticaneue.ttf);
+}
+@font-face {
+    font-family: Helvetica Neue Bold;
+    src: url(/assets/fonts/Helvetica\ Neue\ Condensed\ Bold.ttf);
+}
+/*--------header-------------*/
+header{
+background-color: #0A22F4;
+}
+.header-logo{
+    max-width: 100px;
+}
+.nav-text{
+    font-size: 16px;
+    color: #ffffff;
+    font-family: Helvetica Neue Regular;
+}
+.nav-text::after{
+    content: "";
+	width: 0%;
+    margin-left: 25%;
+	height: 2px;
+	background-color: #ffffff;
+	display: block;
+    margin-top: 5px;
+    transition: all .3s;
+    border-radius: 1px;
+}
+.nav-text:hover::after{
+    width: 50%;
+}
+
+.conteiner-nav{
+    max-width: 1475px;
+    width: 100%;
+    margin: auto;
+    padding: 20px 110px;
+}
+.header-wrapper{
+    max-width: 1475px;
+    display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.nav, .header-nav{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.nav-button{
+    color: #171717;
+    padding: 18px 40px 20px 40px ;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    transition: all .3s;
+    border-radius: 20px;
+    font-family:Helvetica Neue Bold;
+    
+}
+.nav-button:hover{
+    color: #ffffff;
+    background-color: transparent;
+}
+/*-----------section-----------*/
+section{
+ padding: 240px;
+}
+.main-title{
+    color: #171717;
+    font-size: 32px;
+    font-family:Helvetica Neue Bold;
+}
+.conteiner-intro{
+    display: flex;
+    justify-content: space-between;
+}
+.box1, .box2, .box3{
+    max-width: 460px;
+}
+.box-title1, .box-title2, .box-title3{
+    color: #171717;
+    font-size: 22px;
+    font-family:Helvetica Neue Bold;
+}
+.box-title1::before{
+    content: "";
+	width: 70px;
+	height: 70px;
+	background-color: #F9F9F9;
+	display: block;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.box-title2::before{
+    content: "";
+	width: 70px;
+	height: 70px;
+	background-color: #0A22F4;
+	display: block;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.box-title3::before{
+    content: "";
+	width: 70px;
+	height: 70px;
+	background-color: #F9F9F9;
+	display: block;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+.box-para{
+    padding-top: 20px;
+    font-family: Helvetica Neue Regular;
+}
+.title-wrap, .ellips-box{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.ellips1, .ellips2, .ellips3{
+    background-color: #0A22F4;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+}
+.ellips2, .ellips3{
+    opacity: 0.3;
+    transition: all.2s;
+    cursor: pointer;
+}
+.ellips2:hover{
+    opacity: 1;
+}
+.ellips3:hover{
+    opacity: 1;
+}
